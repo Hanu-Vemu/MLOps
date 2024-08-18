@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/MLOps/mlruns/841576635043306368/4afe177e46894614b74f9c4acb8ef4fd/artifacts
+end_time: 1723996504417
+entry_point_name: ''
+experiment_id: '841576635043306368'
+lifecycle_stage: active
+run_id: 4afe177e46894614b74f9c4acb8ef4fd
+run_name: Random Forest
+run_uuid: 4afe177e46894614b74f9c4acb8ef4fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723996495638
+status: 3
+tags: []
+user_id: Hanu

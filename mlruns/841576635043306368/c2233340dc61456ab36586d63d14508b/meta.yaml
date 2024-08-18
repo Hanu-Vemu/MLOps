@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/MLOps/mlruns/841576635043306368/c2233340dc61456ab36586d63d14508b/artifacts
+end_time: 1723996518541
+entry_point_name: ''
+experiment_id: '841576635043306368'
+lifecycle_stage: active
+run_id: c2233340dc61456ab36586d63d14508b
+run_name: SVC
+run_uuid: c2233340dc61456ab36586d63d14508b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723996512940
+status: 3
+tags: []
+user_id: Hanu
