@@ -9,6 +9,10 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import classification_report
 import mlflow
 import mlflow.sklearn
+import dagshub
+
+# Initialize dagshub
+dagshub.init(repo_owner='v.hanu85', repo_name='MLOps', mlflow=True)
 
 # Load the dataset
 df = pd.read_csv("data.csv")
@@ -33,15 +37,16 @@ X_test = scaler.transform(X_test)
 
 # Define the models and their hyperparameters
 models = {
-    "Logistic Regression": LogisticRegression(solver="lbfgs", max_iter=10000, multi_class="auto", random_state=8888),
+    "Logistic Regression": LogisticRegression(solver="lbfgs", max_iter=10000, random_state=8888),
     "Random Forest": RandomForestClassifier(n_estimators=100, random_state=42),
     "XGBoost": XGBClassifier(n_estimators=100, learning_rate=0.1, random_state=42),
     "SVC": SVC(kernel='linear', C=1, random_state=42),
     "Decision Tree": DecisionTreeClassifier(random_state=42)
 }
 
+
 # Set the MLflow experiment and tracking URI
-mlflow.set_experiment("cancer_data")
+mlflow.set_experiment("Anomaly Detection")
 mlflow.set_tracking_uri(uri="http://127.0.0.1:5000/")
 
 # Loop through each model, train, predict, and log with MLflow
