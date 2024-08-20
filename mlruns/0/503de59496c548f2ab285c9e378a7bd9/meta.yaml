@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/MLOps/mlruns/0/503de59496c548f2ab285c9e378a7bd9/artifacts
+end_time: 1724129318687
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 503de59496c548f2ab285c9e378a7bd9
+run_name: SVC
+run_uuid: 503de59496c548f2ab285c9e378a7bd9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724129312206
+status: 3
+tags: []
+user_id: 00266b2e781d0b50cca06332af130062b4c16e65

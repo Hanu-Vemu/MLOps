@@ -11,9 +11,6 @@ import mlflow
 import mlflow.sklearn
 import dagshub
 
-# Initialize dagshub
-dagshub.init(repo_owner='v.hanu85', repo_name='MLOps', mlflow=True)
-
 # Load the dataset
 df = pd.read_csv("data.csv")
 
@@ -44,6 +41,8 @@ models = {
     "Decision Tree": DecisionTreeClassifier(random_state=42)
 }
 
+# Initialize dagshub
+dagshub.init(repo_owner='v.hanu85', repo_name='MLOps', mlflow=True)
 
 # Set the MLflow experiment and tracking URI
 mlflow.set_experiment("Anomaly Detection")
@@ -59,6 +58,10 @@ for model_name, model in models.items():
     
     # Start a new MLflow run
     with mlflow.start_run(run_name=model_name):
+        # Set tags
+        mlflow.set_tag("model_name", model_name)
+        mlflow.set_tag("run_type", "experiment")
+        
         # Log the model parameters
         if hasattr(model, 'get_params'):
             mlflow.log_params(model.get_params())

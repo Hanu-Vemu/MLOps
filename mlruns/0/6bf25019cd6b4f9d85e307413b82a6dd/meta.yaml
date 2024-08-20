@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/MLOps/mlruns/0/6bf25019cd6b4f9d85e307413b82a6dd/artifacts
+end_time: 1724129324243
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6bf25019cd6b4f9d85e307413b82a6dd
+run_name: Decision Tree
+run_uuid: 6bf25019cd6b4f9d85e307413b82a6dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724129318747
+status: 3
+tags: []
+user_id: 00266b2e781d0b50cca06332af130062b4c16e65
